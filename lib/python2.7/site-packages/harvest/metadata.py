@@ -1,0 +1,6 @@
+__version__ = "2.0.1"
+__author__ = "Alex Goretoy"
+__copyright__ = "Copyright 2012, Lionheart Software LLC"
+__maintainer__ = "Dan Loewenherz"
+__email__ = "dan@lionheartsw.com"
+__license__ = "Apache 2.0"
