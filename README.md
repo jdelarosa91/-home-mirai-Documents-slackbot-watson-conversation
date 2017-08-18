@@ -1,22 +1,53 @@
-# slackbot-watson-conversation
-Slackbot using watson to handle team's calendar.
+# Slackbot + Watson Conversation + Watson translator
 
-## Requirements:
+Slack chatbot that use natural language and multilanguage using Watson that allows to control Google calendar to do the following tasks:
+* Get next events
+* Get free time
+* Get time available for a meeting
+* Post a event in google calendar
 
-### Slack:
+
+## Getting Started
+
+These instructions will allow you to run the program 
+
+### Prerequisites
+
+You need to instal the following things before running the program:
 * Create a bot: https://api.slack.com/bot-users
 * Create a slack APP: https://api.slack.com
 * Google Calendar:
 * Create a google calendar project: https://console.developers.google.com/flows/enableapi?apiid=calendar&authuser=1
-
-### IBM Watson:
 * Create a service Watson conversation
 * Import intents and entities from the excel file
 * Activate: sys-time, sys-date
 * Create a service Watson Translator
-
-### Python:
 * Python 2/3
 * PIP installed
 * virtualenv installed
-* Necessay to install using "pip install <package_name> the following packages: watson_developer_cloud, apiclient, langdetect
+
+### Installing
+
+First of all, the enviroment must be set up using the following code:
+
+```
+source bin/activate
+```
+
+After it, few libraries must be installed using the following command
+
+```
+pip install name_of_library
+```
+Libraries to install:
+* watson_developer_cloud
+* apiclient
+* langdetect
+
+
+## Deployment
+
+To run the program just run the following code:
+```
+python src/SlackBot.py 
+```
